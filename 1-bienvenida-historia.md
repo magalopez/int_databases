@@ -75,3 +75,4 @@ Existen dos tipos de Entidades, las fuertes y débiles.
 Existen varios tipos de notaciones para los modelos entidad relacionamiento. Chen es uno de los más utilizados para diagramar lógicamente la base de datos.
 
 ![Chen's Notation](https://static.platzi.com/media/user_upload/ejemplo-notacion-chen-entidades-98a3fc2d-c6c0-4012-9e0e-c51edc2acc40.jpg)
+
