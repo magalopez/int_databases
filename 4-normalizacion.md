@@ -1,5 +1,8 @@
 # Normalización
 
+[Fundamentos de la normalización de bases de datos](https://learn.microsoft.com/es-mx/office/troubleshoot/access/database-normalization-description)
+
+
 La normalización como su nombre lo indica nos ayuda a dejar todo de una forma normal. Esto obedece a las 12 reglas de Codd y nos permiten separar componentes en la base de datos:
 
 Ejemplo Sin Normalizar
