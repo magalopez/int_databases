@@ -40,3 +40,8 @@ CHANGE COLUMN date_of_birth date_of_birth VARCHAR(30) NULL DEFAULT NULL;
 ALTER TABLE platziblog.people
 DROP COLUMN date_of_birth;
 ~~~
+
+LOS AS te permiten crear alias 
+~~~
+SELECT titulo AS encabezado, fecha_publicacion AS publicado_en, status AS estado FROM post WHERE status = 'inactivo';
+~~~
