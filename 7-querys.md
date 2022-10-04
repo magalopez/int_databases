@@ -100,5 +100,40 @@ select u.id, u.email, p.name from user u right join product p on u.id = p.create
 select u.id, u.email, p.name from user u inner join product p on u.id = p.created_by;
 
 select u.id, u.email, p.id, p.name from user u cross join product p;
+
+
+select count(p.id), u.name from product p left join user u
+    on u.id = p.created_by group by p.created_by
+    having count(p.id) >= 2;
+
+select * from usuario;
+
+select * from usuario left join post on usuario.id = post.usuario_id;
+
+select * from usuario left join post on usuario.id = post.usuario_id
+where post.usuario_id is null;
+
+select * from usuario right join post on usuario.id = post.usuario_id;
+
+select * from usuario right join post on usuario.id = post.usuario_id
+where post.usuario_id is null;
+
+select * from usuario inner join post on usuario.id = post.usuario_id;
+
+select * from usuario left join post on usuario.id = post.usuario_id
+union select * from usuario right join post on usuario.id = post.usuario_id;
+
+select * from post where month(post.fecha_publicacion) = '04';
+
+select * from post where year(post.fecha_publicacion) between '2024' and '2025';
+
+select year(fecha_publicacion) as post_year, count(*) as post_quantity from post group by post_year;
+
+select monthname(fecha_publicacion) as post_per_month, count(*) as post_quantity from post group by post_per_month;
+
+select status, monthname(fecha_publicacion) as post_per_month, count(*) as post_quantity from post group by status, post_per_month;
+
+show full tables from platziblog;
+
 ~~~
 
