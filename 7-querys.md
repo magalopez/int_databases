@@ -137,3 +137,6 @@ show full tables from platziblog;
 
 ~~~
 
+
+
+SELECT * FROM artists LIMIT 5 OFFSET [Number of rows to skip];
